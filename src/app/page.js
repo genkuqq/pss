@@ -1,7 +1,9 @@
+import Servers from "@/components/Servers/Servers";
+
 export default function Home() {
   return (
     <main>
-      <p>kek</p>
+      <Servers />
     </main>
   );
 }
