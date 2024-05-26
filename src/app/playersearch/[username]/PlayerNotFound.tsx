@@ -5,7 +5,7 @@ export default function PlayerNotFound() {
   return (
     <div className={styles.playernotfound}>
       <FontAwesomeIcon className={styles.icon} icon={"triangle-exclamation"} />
-      <p>Oyuncu ile ilgili bilgi alınamadı.</p>
+      <p>Böyle bir oyuncu bulunamadı.</p>
     </div>
   );
 }
