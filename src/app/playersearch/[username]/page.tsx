@@ -8,6 +8,8 @@ import {
 } from "@/utils/PlayerSearchUtils";
 import AntagJobs from "@/components/PlayerSearch/AntagJobs";
 import PlayerSearch from "../page";
+import { Suspense } from "react";
+import PlayerNotFound from "./PlayerNotFound";
 
 export default async function PlayerDetails({
   params,
@@ -21,9 +23,7 @@ export default async function PlayerDetails({
     return (
       <>
         <PlayerSearch />
-        <div className={styles.playernotfound}>
-          <p>Oyuncu ile ilgili bilgi alınamadı.</p>
-        </div>
+        <PlayerNotFound />
       </>
     );
   }

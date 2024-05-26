@@ -271,20 +271,46 @@
   margin: auto;
   padding: 20px;
   margin-top: 24px;
-  width: 60%;
+  width: 45%;
   background-color: rgb(24 24 27);
   border-radius: 15px;
   border-left: 15px solid;
   border-color: rgb(167 139 250);
-  h2 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: rgb(167 139 250);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  vertical-align: middle;
+  .icon {
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    color: #be5f6c;
   }
-
   p {
+    padding: auto;
+    margin: auto;
+    margin-left: 25px;
     font-weight: 600;
     color: rgb(214 211 209);
     text-wrap: pretty;
+  }
+}
+
+.loading {
+  @extend .playernotfound;
+  flex-direction: column;
+  text-align: center;
+  p {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .icon {
+    padding: auto;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    color: #5b7494;
   }
 }

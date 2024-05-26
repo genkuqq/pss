@@ -13,6 +13,7 @@ export interface IPlayerPlaytimeData {
 }
 
 export async function getPlayerData(ckey: string): Promise<IPlayerData | null> {
+  // note: Testing loading await new Promise((resolve) => setTimeout(resolve, 14000));
   const response = await fetch(`https://api.turkb.us/v2/player/?ckey=${ckey}`, {
     cache: "no-cache",
     headers: {
@@ -29,6 +30,7 @@ export async function getPlayerData(ckey: string): Promise<IPlayerData | null> {
 export async function getPlayerPlaytime(
   ckey: string
 ): Promise<IPlayerPlaytimeData | null> {
+  // note: Testing loading await new Promise((resolve) => setTimeout(resolve, 14000));
   const response = await fetch(
     `https://api.turkb.us/v2/player/roletime?ckey=${ckey}`,
     {
@@ -42,6 +44,7 @@ export async function getPlayerPlaytime(
     return null;
   }
   const data = await response.json();
+
   return data;
 }
 
