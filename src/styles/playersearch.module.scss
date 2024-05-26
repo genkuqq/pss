@@ -265,3 +265,26 @@
   color: rgb(167, 139, 250);
   background-color: transparent;
 }
+
+.playernotfound {
+  padding: auto;
+  margin: auto;
+  padding: 20px;
+  margin-top: 24px;
+  width: 60%;
+  background-color: rgb(24 24 27);
+  border-radius: 15px;
+  border-left: 15px solid;
+  border-color: rgb(167 139 250);
+  h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(167 139 250);
+  }
+
+  p {
+    font-weight: 600;
+    color: rgb(214 211 209);
+    text-wrap: pretty;
+  }
+}

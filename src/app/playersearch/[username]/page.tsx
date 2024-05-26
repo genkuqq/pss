@@ -7,6 +7,7 @@ import {
   getPlayerPlaytime,
 } from "@/utils/PlayerSearchUtils";
 import AntagJobs from "@/components/PlayerSearch/AntagJobs";
+import PlayerSearch from "../page";
 
 export default async function PlayerDetails({
   params,
@@ -17,13 +18,21 @@ export default async function PlayerDetails({
   const playerPlaytimeData: IPlayerPlaytimeData | null =
     await getPlayerPlaytime(params.username);
   if (!playerData) {
-    return <div>Boyle bir oyuncu bulunmamakta</div>;
+    return (
+      <>
+        <PlayerSearch />
+        <div className={styles.playernotfound}>
+          <p>Oyuncu ile ilgili bilgi alınamadı.</p>
+        </div>
+      </>
+    );
   }
   if (!playerPlaytimeData) {
     return null;
   }
   return (
     <div>
+      <PlayerSearch />
       <div className={styles.playerdetails}>
         <div className={styles.profile}>
           <div
