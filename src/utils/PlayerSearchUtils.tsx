@@ -1,11 +1,11 @@
 export interface IPlayerData {
   ckey: string;
   byond_key: string;
-  first_seen: Date;
-  last_seen: Date;
+  first_seen: string;
+  last_seen: string;
   first_seen_round: string;
   last_seen_round: string;
-  byond_age: Date;
+  byond_age: string;
 }
 export interface IPlayerPlaytimeData {
   job: string;
@@ -16,16 +16,13 @@ export async function getPlayerData(ckey: string): Promise<IPlayerData | null> {
   const response = await fetch(`https://api.turkb.us/v2/player/?ckey=${ckey}`, {
     cache: "no-cache",
     headers: {
-      "X-DEV-KEY": process.env.DEV_KEY || "",
+      "X-DEV-KEY": process.env.API_KEY || "",
     },
   });
   if (!response.ok) {
     return null;
   }
   const data = await response.json();
-  data.first_seen = new Date(data.first_seen);
-  data.last_seen = new Date(data.last_seen);
-  data.byond_age = new Date(data.byond_age);
   return data;
 }
 
@@ -37,7 +34,7 @@ export async function getPlayerPlaytime(
     {
       cache: "no-cache",
       headers: {
-        "X-DEV-KEY": process.env.DEV_KEY || "",
+        "X-DEV-KEY": process.env.API_KEY || "",
       },
     }
   );
@@ -46,4 +43,10 @@ export async function getPlayerPlaytime(
   }
   const data = await response.json();
   return data;
+}
+
+export function getTimeString(minutes: number) {
+  const hours = Math.floor(minutes / 60);
+  const mins = minutes % 60;
+  return `${hours} Saat ${mins} Dakika`;
 }
