@@ -7,13 +7,13 @@
 import {
   capitalizeFirstLetter,
   getGameState,
-  iServer,
+  IServer,
 } from "../../utils/ServerUtils";
 import { Tooltip } from "react-tooltip";
 import styles from "../../styles/server.module.scss";
 
 interface ActiveServer {
-  server: iServer;
+  server: IServer;
 }
 
 export default function ActiveServer({ server }: ActiveServer) {

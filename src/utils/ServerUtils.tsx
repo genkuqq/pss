@@ -4,7 +4,7 @@ const GAME_STATE_SETTING_UP = 2;
 const GAME_STATE_PLAYING = 3;
 const GAME_STATE_FINISHED = 4;
 
-export interface iServer {
+export interface IServer {
   connection_info: string;
   gamestate: number;
   map: string;
@@ -16,7 +16,7 @@ export interface iServer {
   server_status: number;
 }
 
-export async function getServers(): Promise<iServer[] | null> {
+export async function getServers(): Promise<IServer[] | null> {
   const response = await fetch("https://api.turkb.us/v2/server", {
     next: { revalidate: 35 },
   });
