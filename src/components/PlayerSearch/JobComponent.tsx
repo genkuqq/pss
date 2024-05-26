@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { iconMap } from "./Jobs/IconMap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import { Suspense } from "react";
 library.add(fas);
 
 interface IJob {
@@ -21,13 +20,9 @@ const findJobMinutes = (jobName: string, data: any) => {
 export default function JobComponent(params: IJob) {
   return (
     <div className={styles.jobdetail}>
-      <Suspense fallback={<p>yukleniyor</p>}>
-        <FontAwesomeIcon className={styles.icon} icon={iconMap[params.icon]} />
-        <span>{params.name}</span>
-        <p className={styles.time}>
-          {findJobMinutes(params.name, params.data)}
-        </p>
-      </Suspense>
+      <FontAwesomeIcon className={styles.icon} icon={iconMap[params.icon]} />
+      <span>{params.name}</span>
+      <p className={styles.time}>{findJobMinutes(params.name, params.data)}</p>
     </div>
   );
 }
