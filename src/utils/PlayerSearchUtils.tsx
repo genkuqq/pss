@@ -28,7 +28,7 @@ export async function getPlayerData(ckey: string): Promise<IPlayerData | null> {
 
 export async function getPlayerPlaytime(
   ckey: string
-): Promise<IPlayerPlaytimeData[] | null> {
+): Promise<IPlayerPlaytimeData | null> {
   const response = await fetch(
     `https://api.turkb.us/v2/player/roletime?ckey=${ckey}`,
     {
