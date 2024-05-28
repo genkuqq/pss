@@ -36,11 +36,9 @@ export function findJobMinutes(jobName: string, data: any) {
 export function getTotalPlaytime(timedata: any) {
   const living = timedata.find((item: any) => item.job === "Living");
   const ghost = timedata.find((item: any) => item.job === "Ghost");
-  const admin = timedata.find((item: any) => item.job === "Admin");
   const livingMinutes = living ? living.minutes : 0;
   const ghostMinutes = ghost ? ghost.minutes : 0;
-  const adminMinutes = admin ? admin.minutes : 0;
-  return getTimeString(livingMinutes + ghostMinutes + adminMinutes);
+  return getTimeString(livingMinutes + ghostMinutes);
 }
 
 export default function JobComponent(params: IJob) {
