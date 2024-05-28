@@ -29,6 +29,7 @@ export default function ServiceJobs({
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Station"
           data={playtimedata}
         />
       ))}

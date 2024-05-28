@@ -2,39 +2,33 @@ import styles from "../../../../styles/playersearch.module.scss";
 import JobComponent from "../../../../components/PlayerSearch/JobComponent";
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
 const Jobs = [
-  "Syndicate Sleeper Agent",
-  "Abductor",
-  "Blob",
-  "Blob Infection",
-  "Fugitive",
-  "Glitch",
-  "Lone Operative",
   "Nightmare",
-  "Nuclear Assailant",
-  "Obsessed",
-  "Paradox Clone",
-  "Revenant",
-  "Sentient Creature",
   "Space Dragon",
   "Space Ninja",
-  "Value Drifted AI",
-  "Wizard (Midround)",
+  "Spider",
   "Xenomorph",
+  "Space Pirate",
+  "Revenant",
+  "Paradox Clone",
+  "Fugitive",
+  "Fugitive Hunter",
+  "Pyroclastic Anomaly Slime",
 ];
-export default function MidRoundJobs({
+export default function SpaceThreatJobs({
   playtimedata,
 }: {
   playtimedata: IPlayerPlaytimeData;
 }) {
   return (
-    <div className={styles.midround}>
-      <h3>Mid Round</h3>
+    <div className={styles.security}>
+      <h3>Space Threat</h3>
       <hr />
       {Jobs.map((jobTitle) => (
         <JobComponent
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Antag"
           data={playtimedata}
         />
       ))}

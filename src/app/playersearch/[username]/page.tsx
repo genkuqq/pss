@@ -9,6 +9,7 @@ import {
 import AntagJobs from "@/components/PlayerSearch/AntagJobs";
 import PlayerSearch from "../page";
 import PlayerNotFound from "./PlayerNotFound";
+import OtherJobs from "@/components/PlayerSearch/OtherJobs";
 
 export default async function PlayerDetails({
   params,
@@ -55,6 +56,8 @@ export default async function PlayerDetails({
       <StationJobs playtimedata={playerPlaytimeData} />
       <div className={styles.jobheader}>Antags</div>
       <AntagJobs playtimedata={playerPlaytimeData} />
+      <div className={styles.jobheader}>Others</div>
+      <OtherJobs playtimedata={playerPlaytimeData} />
     </div>
   );
 }

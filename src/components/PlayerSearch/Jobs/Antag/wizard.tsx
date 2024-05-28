@@ -1,33 +1,22 @@
 import styles from "../../../../styles/playersearch.module.scss";
 import JobComponent from "../../../../components/PlayerSearch/JobComponent";
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
-const Jobs = [
-  "Traitor",
-  "Blood Brother",
-  "Changeling",
-  "Clown Operative",
-  "Cultist",
-  "Revolutionary",
-  "Heretic",
-  "Malfunctioning AI",
-  "Nuclear Operative",
-  "Spy",
-  "Wizard",
-];
-export default function RoundStartJobs({
+const Jobs = ["Wizard", "Wizard (Midround)", "Apprentice", "Slaughter Demon"];
+export default function WizardJobs({
   playtimedata,
 }: {
   playtimedata: IPlayerPlaytimeData;
 }) {
   return (
-    <div className={styles.roundstart}>
-      <h3>Round Start</h3>
+    <div className={styles.security}>
+      <h3>Wizard Federation</h3>
       <hr />
       {Jobs.map((jobTitle) => (
         <JobComponent
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Antag"
           data={playtimedata}
         />
       ))}

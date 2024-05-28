@@ -2,26 +2,26 @@ import styles from "../../../../styles/playersearch.module.scss";
 import JobComponent from "../../../../components/PlayerSearch/JobComponent";
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
 const Jobs = [
-  "Chief Engineer",
-  "Station Engineer",
-  "Worker",
-  "Atmospheric Technician",
+  "Abductor",
+  "Abductor Agent",
+  "Abductor Scientist",
+  "Abductor Solo",
 ];
-export default function EngineeringJobs({
+export default function AbductorsJobs({
   playtimedata,
 }: {
   playtimedata: IPlayerPlaytimeData;
 }) {
   return (
-    <div className={styles.engineering}>
-      <h3>Engineering</h3>
+    <div className={styles.security}>
+      <h3>Abductors</h3>
       <hr />
       {Jobs.map((jobTitle) => (
         <JobComponent
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
-          iconmap="Station"
+          iconmap="Antag"
           data={playtimedata}
         />
       ))}

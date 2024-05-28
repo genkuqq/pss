@@ -16,6 +16,7 @@ export default function SiliconJobs({
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Station"
           data={playtimedata}
         />
       ))}

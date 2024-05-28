@@ -16,6 +16,7 @@ export default function ScienceJobs({
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Station"
           data={playtimedata}
         />
       ))}

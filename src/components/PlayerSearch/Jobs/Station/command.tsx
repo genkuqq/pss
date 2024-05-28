@@ -26,6 +26,7 @@ export default function CommandJobs({
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
+          iconmap="Station"
           data={playtimedata}
         />
       ))}

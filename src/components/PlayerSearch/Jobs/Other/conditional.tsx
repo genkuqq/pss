@@ -2,26 +2,34 @@ import styles from "../../../../styles/playersearch.module.scss";
 import JobComponent from "../../../../components/PlayerSearch/JobComponent";
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
 const Jobs = [
-  "Chief Engineer",
-  "Station Engineer",
-  "Worker",
-  "Atmospheric Technician",
+  "Big Brother",
+  "Bridge Assistant",
+  "Cargo Gorilla",
+  "Cargorilla",
+  "Veteran Security Advisor",
+  "Avatar of the Wish Granter",
+  "revolution enemy",
+  "exiled headrev",
+  "Santa",
+  "valentine",
+  "survivalist",
+  "highlander",
 ];
-export default function EngineeringJobs({
+export default function ConditionalJobs({
   playtimedata,
 }: {
   playtimedata: IPlayerPlaytimeData;
 }) {
   return (
-    <div className={styles.engineering}>
-      <h3>Engineering</h3>
+    <div className={styles.cargo}>
+      <h3>Conditional</h3>
       <hr />
       {Jobs.map((jobTitle) => (
         <JobComponent
           key={jobTitle}
           name={jobTitle}
           icon={jobTitle}
-          iconmap="Station"
+          iconmap="Other"
           data={playtimedata}
         />
       ))}

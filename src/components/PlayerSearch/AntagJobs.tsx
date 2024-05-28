@@ -1,8 +1,11 @@
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
 import styles from "../../styles/playersearch.module.scss";
-import LateJoinJobs from "./Jobs/Antag/latejoin";
-import MidRoundJobs from "./Jobs/Antag/midround";
-import RoundStartJobs from "./Jobs/Antag/roundstart";
+import SyndicateJobs from "./Jobs/Antag/syndicate";
+import AbductorsJobs from "./Jobs/Antag/abductors";
+import BiohazardJobs from "./Jobs/Antag/biohazard";
+import MagicJobs from "./Jobs/Antag/magic";
+import SpaceThreatJobs from "./Jobs/Antag/spacethreat";
+import WizardJobs from "./Jobs/Antag/wizard";
 
 export default function AntagJobs({
   playtimedata,
@@ -13,13 +16,16 @@ export default function AntagJobs({
     <div className={styles.playercontainer}>
       <div className={styles.flexrow}>
         <div className={styles.flexcol}>
-          <RoundStartJobs playtimedata={playtimedata} />
+          <SyndicateJobs playtimedata={playtimedata} />
         </div>
         <div className={styles.flexcol}>
-          <MidRoundJobs playtimedata={playtimedata} />
+          <SpaceThreatJobs playtimedata={playtimedata} />
+          <AbductorsJobs playtimedata={playtimedata} />
         </div>
         <div className={styles.flexcol}>
-          <LateJoinJobs playtimedata={playtimedata} />
+          <BiohazardJobs playtimedata={playtimedata} />
+          <MagicJobs playtimedata={playtimedata} />
+          <WizardJobs playtimedata={playtimedata} />
         </div>
       </div>
     </div>
