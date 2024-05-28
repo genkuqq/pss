@@ -1,7 +1,7 @@
 import styles from "../../../../styles/playersearch.module.scss";
 import JobComponent from "../../../../components/PlayerSearch/JobComponent";
 import { IPlayerPlaytimeData } from "@/utils/PlayerSearchUtils";
-const Jobs = ["Blob Infection", "Sentient Disease", "Morph"];
+const Jobs = ["Blob Infection", "Sentient Disease (Veri Gelmiyor)", "Morph"];
 export default function BiohazardJobs({
   playtimedata,
 }: {
