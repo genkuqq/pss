@@ -11,12 +11,16 @@ import {
 } from "../../utils/ServerUtils";
 import { Tooltip } from "react-tooltip";
 import styles from "../../styles/server.module.scss";
+import RoundTimeFunc from "./RoundTime";
 
 interface ActiveServer {
   server: IServer;
 }
 
 export default function ActiveServer({ server }: ActiveServer) {
+  const roundtime = new Date(server.round_duration * 1000)
+    .toISOString()
+    .substring(11, 19);
   return (
     <div className={styles.activeserver}>
       <div className={styles.flexcol}>
@@ -57,9 +61,7 @@ export default function ActiveServer({ server }: ActiveServer) {
             data-tooltip-content="Round Süresi"
             data-tooltip-place="bottom"
           >
-            {new Date(server.round_duration * 1000)
-              .toISOString()
-              .substring(11, 19)}
+            <RoundTimeFunc datetime={new Date(server.round_duration * 1000)} />
           </p>
         </div>
       </div>
