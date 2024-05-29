@@ -11,6 +11,7 @@ import PlayerSearch from "../page";
 import PlayerNotFound from "./PlayerNotFound";
 import OtherJobs from "@/components/PlayerSearch/OtherJobs";
 import { getTotalPlaytime } from "@/components/PlayerSearch/JobComponent";
+import UserDetail from "./UserDetail";
 
 export default async function PlayerDetails({
   params,
@@ -45,15 +46,10 @@ export default async function PlayerDetails({
               alignItems: "center",
             }}
           ></div>
-
-          <div style={{ textAlign: "left" }}>
-            <h1>{playerData.byond_key}</h1>
-            <h4>Son Görülme: {playerData.last_seen}</h4>
-            <h4>Son Görüldüğü Round: {playerData.last_seen_round}</h4>
-            <h4>
-              Toplam Oynama Süresi: {getTotalPlaytime(playerPlaytimeData)}
-            </h4>
-          </div>
+          <UserDetail
+            playerData={playerData}
+            totalplaytime={getTotalPlaytime(playerPlaytimeData)}
+          />
         </div>
       </div>
       <div className={styles.jobheader}>Station Jobs</div>
