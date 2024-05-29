@@ -14,7 +14,7 @@ export const otherIcons: any = {
   "Lavaland Syndicate": "section",
   "Space Syndicate": "section",
   "Cybersun Space Syndicate": "section",
-  "Cybersun Space Syndicate Captain": "text",
+  "Cybersun Space Syndicate Captain": "section",
   "Derelict Drone": "robot",
   "Maintenance Drone": "robot",
   "Free Golem": "chess-rook",
