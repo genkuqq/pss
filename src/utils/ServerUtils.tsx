@@ -18,7 +18,7 @@ export interface IServer {
 
 export async function getServers(): Promise<IServer[] | null> {
   const response = await fetch("https://api.turkb.us/v2/server", {
-    next: { revalidate: 35 },
+    next: { revalidate: 5 },
   });
   if (!response.ok) {
     return null;

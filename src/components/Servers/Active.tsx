@@ -18,9 +18,6 @@ interface ActiveServer {
 }
 
 export default function ActiveServer({ server }: ActiveServer) {
-  const roundtime = new Date(server.round_duration * 1000)
-    .toISOString()
-    .substring(11, 19);
   return (
     <div className={styles.activeserver}>
       <div className={styles.flexcol}>
