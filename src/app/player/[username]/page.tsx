@@ -1,4 +1,4 @@
-import styles from "../../../styles/playersearch.module.scss";
+import styles from "../../../styles/player.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	PlayerDataProps,
@@ -7,6 +7,7 @@ import {
 	getPlayerPlaytime,
 } from "@/utils/player";
 import PlayerSearch from "../page";
+import PlayerPlaytimeComponent from "@/components/player";
 
 export default async function PlayerDetails({
 	params,
@@ -32,7 +33,7 @@ export default async function PlayerDetails({
 	return (
 		<div>
 			<PlayerSearch />
-			<div className={styles.jobheader}>Station Jobs</div>
+			<PlayerPlaytimeComponent playtimedata={playerPlaytimeData} />
 		</div>
 	);
 }

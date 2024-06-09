@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/playersearch.module.scss";
+import styles from "../../styles/player.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";

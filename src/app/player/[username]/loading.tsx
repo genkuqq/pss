@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../../../styles/playersearch.module.scss";
+import styles from "../../../styles/player.module.scss";
 
 export default function Loading() {
 	return (
