@@ -1,26 +1,29 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Footer, Header } from "@/components/pagecomponents";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
 export const metadata: Metadata = {
-  title: "Psychonaut Station",
-  description: "Psychonaut İstasyonu'na hoşgeldin.",
+	title: "Psychonaut Station",
+	description: "Psychonaut İstasyonu'na hoşgeldin.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        {children}
-        <Footer />
-        <div className="background" />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>
+				<Header />
+				{children}
+				<div className="background" />
+				<Footer />
+			</body>
+		</html>
+	);
 }

@@ -1,0 +1,18 @@
+iconlar icin kutuphane duzenlenmesi 3 farkli import fazla?
+utils/ içerisindeki dosyaları büyük harfle yazma
+utils/ServerUtils.tsx değil utils/server.ts olmalı
+
+eslint için ayrıca eslint-plugin-simple-import-sort kullanırsan iyi olur
+components/ için her bir componenti ayrı dosyaya koyman kalabalık yapıyor
+.env.example ı şu şekilde yap
+	API_KEY= #falan filan
+
+route isimlerini daha basit yap playersearch yerine sadece player mesela
+
+API_KEY => DEV_KEY
+Sentient rolunu cikar db de yok zaten
+
+Son gorulme ve round yazilarini duzenele tooltip yazisi text olsun
+
+Saat, Dakika ve Önce küçük harfle yaz araya virgül de koyabilirsin "5 gün, 22 saat, 52 dakika önce"
+footeri sayfanın sonuna al

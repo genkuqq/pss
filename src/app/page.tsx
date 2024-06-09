@@ -1,9 +1,9 @@
-import Servers from "@/components/Servers/ServersBase";
+import Servers from "../components/server";
 
 export default function Home() {
-  return (
-    <div>
-      <Servers />
-    </div>
-  );
+	return (
+		<div>
+			<Servers />
+		</div>
+	);
 }
