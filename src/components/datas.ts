@@ -2,7 +2,9 @@ interface IconProps {
 	[key: string]: string;
 }
 
-export const stationIcons: IconProps = {
+export const Icons: IconProps = {
+	// Station Icons
+
 	AI: "eye",
 	Animal: "paw",
 	Assistant: "toolbox",
@@ -43,9 +45,9 @@ export const stationIcons: IconProps = {
 	"Station Engineer": "gears",
 	Warden: "handcuffs",
 	Worker: "screwdriver-wrench",
-};
 
-export const antagIcons: IconProps = {
+	// Antag Icons
+
 	Traitor: "jedi",
 	"Blood Brother": "user-group",
 	Spy: "user-secret",
@@ -72,7 +74,6 @@ export const antagIcons: IconProps = {
 	"Abductor Scientist": "shuttle-space",
 	"Abductor Solo": "shuttle-space",
 	"Blob Infection": "virus-covid",
-	"Sentient Disease": "brain",
 	Morph: "certificate",
 	Heretic: "hamsa",
 	"Heretic Smuggler": "hamsa",
@@ -95,9 +96,9 @@ export const antagIcons: IconProps = {
 	"Wizard (Midround)": "hat-wizard",
 	Apprentice: "toolbox",
 	"Slaughter Demon": "otter",
-};
 
-export const otherIcons: IconProps = {
+	// Other Icons
+
 	Admin: "user-tie",
 	Ghost: "ghost",
 	Living: "heart",
@@ -233,7 +234,7 @@ export const Joblist = {
 			"Abductor Scientist",
 			"Abductor Solo",
 		],
-		Biohazard: ["Blob Infection", "Sentient Disease", "Morph"],
+		Biohazard: ["Blob Infection", "Morph"],
 		Magic: [
 			"Heretic",
 			"Heretic Smuggler",

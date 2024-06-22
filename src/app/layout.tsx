@@ -1,7 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
+// Page Components
 import { Footer, Header } from "@/components/pagecomponents";
+// Icon Base imports
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);

@@ -7,6 +7,14 @@ export interface PlayerDataProps {
 	last_seen_round: number;
 	byond_age: string;
 }
+
+export interface JobProps {
+	icon: string;
+	iconmap: string;
+	name: string;
+	data: any;
+}
+
 export interface PlayerPlaytimeDataProps {
 	job: string;
 	minutes: number;
@@ -54,4 +62,20 @@ export function getTimeString(minutes: number) {
 	const hours = Math.floor(minutes / 60);
 	const mins = minutes % 60;
 	return `${hours} Saat ${mins} Dakika`;
+}
+
+export function findJobMinutes(jobName: string, data: any) {
+	if (!Array.isArray(data)) {
+		return "0 Saat 0 Dakika";
+	}
+	const job = data.find((item: any) => item.job === jobName);
+	return job ? getTimeString(job.minutes) : "0 Saat 0 Dakika";
+}
+
+export function getTotalPlaytime(timedata: any) {
+	const living = timedata.find((item: any) => item.job === "Living");
+	const ghost = timedata.find((item: any) => item.job === "Ghost");
+	const livingMinutes = living ? living.minutes : 0;
+	const ghostMinutes = ghost ? ghost.minutes : 0;
+	return getTimeString(livingMinutes + ghostMinutes);
 }

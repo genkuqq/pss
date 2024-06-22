@@ -1,6 +1,6 @@
 import style from "../styles/server.module.scss";
 import { ServerProps, getServers, getGameState } from "../utils/server";
-import TooltipComp from "@/utils/tooltip";
+import TooltipComp from "./tooltip";
 export default async function Servers() {
 	const servers: ServerProps[] | null = await getServers();
 	if (!servers) {

@@ -1,6 +1,8 @@
+// Client Side because this page has routing link to selected username
 "use client";
 import styles from "../../styles/player.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Standart using "icon={"magnifying-glass"} not working in this file"
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../../public/logo.png";
-import headerstyle from "../styles/header.module.scss";
-import footerstyle from "../styles/footer.module.scss";
+import headerstyle from "@/styles/header.module.scss";
+import footerstyle from "@/styles/footer.module.scss";
 import Link from "next/link";
 
 export function Header() {
