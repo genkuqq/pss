@@ -6,7 +6,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Segoe UI", sans-serif;
-	background-color: rgb(17 24 39);
+	text-align: center;
 }
 
 .background {
@@ -37,4 +37,10 @@ body {
 	top: 0;
 	bottom: 0;
 	background: rgba(0, 195, 255, 0.115);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 45vh;
 }

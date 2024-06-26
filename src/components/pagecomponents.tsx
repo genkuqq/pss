@@ -6,31 +6,27 @@ import Link from "next/link";
 
 export function Header() {
 	return (
-		<div>
+		<>
 			<div className={headerstyle.header}>
-				<div>
-					<Image src={logo} alt="" width={96} height={96} />
+				<div className={headerstyle.image}>
+					<Image src={logo} alt="" width={128} height={128} />
 				</div>
 				<div className={headerstyle.title}>
 					<h1>Psychonaut Station</h1>
 				</div>
 			</div>
-			<div className={headerstyle.navbar}>
-				<nav>
-					<ul>
-						<li>
-							<Link href="/">Ana Sayfa</Link>
-						</li>
-						<li>
-							<Link href="/player">Oyuncu Arama</Link>
-						</li>
-						<li>
-							<Link href="/round">Round Geçmişi</Link>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+			<ul className={headerstyle.navbar}>
+				<li>
+					<Link href="/">Ana Sayfa</Link>
+				</li>
+				<li>
+					<Link href="/player">Oyuncu Arama</Link>
+				</li>
+				<li>
+					<Link href="/round">Round Geçmişi</Link>
+				</li>
+			</ul>
+		</>
 	);
 }
 
