@@ -1,5 +1,6 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core"; // Import IconProp type
 interface IconProps {
-	[key: string]: string;
+	[key: string]: IconProp;
 }
 
 export const Icons: IconProps = {

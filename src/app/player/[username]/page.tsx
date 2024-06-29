@@ -5,9 +5,9 @@ import {
 	PlayerPlaytimeDataProps,
 	getPlayerData,
 	getPlayerPlaytime,
-} from "@/utils/player";
+} from "../../../utils/player";
 import PlayerSearch from "../page";
-import PlayerPlaytimeComponent from "@/components/player";
+import PlayerPlaytimeComponent from "../../../components/player";
 
 export default async function PlayerDetails({
 	params,
@@ -38,7 +38,7 @@ export default async function PlayerDetails({
 	);
 }
 
-export function PlayerNotFound() {
+function PlayerNotFound() {
 	return (
 		<div className={styles.playernotfound}>
 			<FontAwesomeIcon className={styles.icon} icon={"triangle-exclamation"} />
