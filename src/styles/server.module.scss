@@ -1,9 +1,3 @@
-.container {
-	display: flex;
-	flex-direction: column;
-	min-height: 45vh;
-}
-
 .flexrow {
 	display: flex;
 	flex-direction: row;
@@ -15,6 +9,13 @@
 }
 
 .activeserver {
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 50%;
+	box-shadow: 0px 0px 10px #e4e5e9;
+	background-color: #e4e5e9;
+	border-radius: 20px;
 	@extend .flexrow;
 	align-items: center;
 	justify-content: space-between;
@@ -24,25 +25,26 @@
 		align-items: center;
 		font-weight: 700;
 		font-size: 1.5rem;
-		color: rgb(167 139 250);
+		color: #6f7878;
 	}
 	.map {
+		text-align: left;
 		font-weight: 600;
 		font-size: 18px;
-		color: rgb(214 211 209);
+		color: #212529;
 	}
 	.details {
 		@extend .flexrow;
 		gap: 16px;
 		font-weight: 600;
-		color: rgb(214 211 209);
+		color: #212529;
 		p {
 			font-weight: 600;
 		}
 	}
 	.connect {
-		background-color: rgb(129, 108, 194);
-		color: rgb(24 24 27);
+		background-color: #33b249;
+		color: #fff;
 		align-content: center;
 		vertical-align: middle;
 		font-weight: 600;
@@ -55,15 +57,25 @@
 }
 
 .deactiveserver {
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 250px;
+	width: 50%;
+	box-shadow: 0px 0px 10px #e4e5e9;
+	background-color: #e4e5e9;
+	border-radius: 20px;
+	@extend .flexcol;
 	h2 {
 		font-weight: 700;
 		font-size: 1.5rem;
-		color: rgb(167 139 250);
+		box-shadow: 0px 0px 10px #e4e5e9;
+		background-color: #e4e5e9;
+		color: #6f7878;
 	}
 
 	p {
 		font-weight: 600;
-		color: rgb(214 211 209);
-		text-wrap: pretty;
+		color: #212529;
 	}
 }

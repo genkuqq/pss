@@ -1,4 +1,4 @@
-import styles from "../styles/player.module.scss";
+import styles from "../styles/pagebase.module.scss";
 import { Icons, Joblist } from "./datas";
 import {
 	findJobMinutes,
@@ -16,7 +16,7 @@ export default function PlayerPlaytimeComponent({
 		return styles[position.replace(/\s+/g, "-")];
 	};
 	return (
-		<div className={styles.playercontainer}>
+		<div className={styles.tcontainer}>
 			{Object.entries(Joblist).map(([position, job]) => (
 				<div key={position} className={styles.departmentbase}>
 					<h3 className={styles.jobheader}>{position}</h3>

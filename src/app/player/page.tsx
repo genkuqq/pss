@@ -3,7 +3,7 @@
 import styles from "../../styles/player.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Standart using "icon={"magnifying-glass"} not working in this file"
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
 
 export default function PlayerSearch() {
@@ -15,9 +15,9 @@ export default function PlayerSearch() {
 		event.target.username.value = "";
 	};
 	return (
-		<div>
+		<div className={styles.container}>
 			<form onSubmit={handleSearch}>
-				<div className={styles.search}>
+				<div className={styles.searchbox}>
 					<input
 						type="text"
 						id="username"
@@ -25,9 +25,7 @@ export default function PlayerSearch() {
 						placeholder="Kullanıcı Adı"
 					/>
 					<button type="submit">
-						<span style={{ color: "rgb(255,255,255)" }}>
-							<FontAwesomeIcon icon={faMagnifyingGlass} />
-						</span>
+						<FontAwesomeIcon icon={faSearch} />
 					</button>
 				</div>
 			</form>

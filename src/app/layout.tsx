@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
+import style from "../styles/pagebase.module.scss";
 // Page Components
 import { Footer, Header } from "@/components/pagecomponents";
 // Icon Base imports
@@ -21,10 +22,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Header />
-				{children}
+				<div className={style.container}>
+					<Header />
+					<main className={style.content}>{children}</main>
+					<Footer />
+				</div>
 				<div className="background" />
-				<Footer />
 			</body>
 		</html>
 	);

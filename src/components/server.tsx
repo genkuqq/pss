@@ -44,16 +44,16 @@ function ActiveServer({ server }: ActiveServerProps) {
 			<div className={style.flexcol}>
 				<div className={style.header}>
 					{server.name}
-					<TooltipComp tooltiptext="Round ID" text={"#" + server.round_id} />
+					<TooltipComp tooltiptext="Tur ID" text={"#" + server.round_id} />
 				</div>
 				<div className={style.map}>
 					<p>{server.map}</p>
 				</div>
 				<div className={style.details}>
-					<p>Aktif Oyuncu: {server.players}</p>
+					<p>Oyuncu Sayısı: {server.players}</p>
 					<p> | </p>
 					<TooltipComp
-						tooltiptext="Round Durumu"
+						tooltiptext="Tur Durumu"
 						text={getGameState(server.gamestate)}
 					/>
 					<p> | </p>
@@ -72,7 +72,7 @@ function ActiveServer({ server }: ActiveServerProps) {
 			</div>
 			<div>
 				<a className={style.connect} href={"byond://" + server.connection_info}>
-					BAĞLAN
+					Bağlan
 				</a>
 			</div>
 		</div>

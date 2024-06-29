@@ -1,21 +1,20 @@
 import Image from "next/image";
 import logo from "../../public/logo.png";
-import headerstyle from "@/styles/header.module.scss";
-import footerstyle from "@/styles/footer.module.scss";
+import style from "@/styles/pagebase.module.scss";
 import Link from "next/link";
 
 export function Header() {
 	return (
 		<>
-			<div className={headerstyle.header}>
-				<div className={headerstyle.image}>
+			<div className={style.header}>
+				<div className={style.image}>
 					<Image src={logo} alt="" width={128} height={128} />
 				</div>
-				<div className={headerstyle.title}>
+				<div className={style.title}>
 					<h1>Psychonaut Station</h1>
 				</div>
 			</div>
-			<ul className={headerstyle.navbar}>
+			<ul className={style.navbar}>
 				<li>
 					<Link href="/">Ana Sayfa</Link>
 				</li>
@@ -32,7 +31,7 @@ export function Header() {
 
 export function Footer() {
 	return (
-		<div className={footerstyle.footer}>
+		<div className={style.footer}>
 			<p className="justify-center text-center text-base text-gray-300 font-sans font-normal">
 				<a href="https://discord.gg/ErFmSgzMkt">Discord</a>
 				<a> | </a>
