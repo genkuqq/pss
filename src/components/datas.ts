@@ -272,7 +272,7 @@ export const Joblist = {
 			"Venus Human Trap",
 			"Ghost Role",
 		],
-		Conditional: [
+		Event: [
 			"Big Brother",
 			"Bridge Assistant",
 			"Cargo Gorilla",

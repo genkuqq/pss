@@ -23,7 +23,6 @@
 			padding: 15px;
 			border-radius: 15px;
 			border: 5px solid #212121;
-			box-shadow: 0.5rem 0.5rem 0 #212121;
 			border-radius: 4px;
 			background-color: rgba(255, 255, 255, 0.829);
 			margin-bottom: 20px;
@@ -38,9 +37,9 @@
 	.Command {
 		@extend .departmentbase;
 		background-color: #6681a5;
-		border: 5px solid #4d607a;
 		border-radius: 4px;
-		box-shadow: 0.5rem 0.5rem 0 #4d607a;
+		border: 5px solid #4d607a;
+		box-shadow: 0.5rem 0.5rem 0 #384558;
 		.jobdetail {
 			background-color: #5b7494;
 			border-color: #5b7494;
@@ -48,10 +47,10 @@
 	}
 	.Security {
 		@extend .departmentbase;
-		border: 5px solid #6d383f;
-		box-shadow: 0.5rem 0.5rem 0 #6d383f;
-		border-radius: 4px;
 		background-color: #d46a78;
+		border-radius: 4px;
+		border: 5px solid #a1505b;
+		box-shadow: 0.5rem 0.5rem 0 #804048;
 		.jobdetail {
 			background-color: #be5f6c;
 			border-color: #be5f6c;
@@ -60,9 +59,9 @@
 	.Engineering {
 		@extend .departmentbase;
 		background-color: #dfb567;
-		border: 5px solid #b39154;
 		border-radius: 4px;
-		box-shadow: 0.5rem 0.5rem 0 #b39154;
+		border: 5px solid #a8894e;
+		box-shadow: 0.5rem 0.5rem 0 #836a3d;
 		.jobdetail {
 			background-color: #c8a25c;
 			border-color: #c8a25c;
@@ -71,6 +70,9 @@
 	.Medical {
 		@extend .departmentbase;
 		background-color: #65b2bd;
+		border-radius: 4px;
+		border: 5px solid #4c868f;
+		box-shadow: 0.5rem 0.5rem 0 #376269;
 		.jobdetail {
 			background-color: #5aa0aa;
 			border-color: #5aa0aa;
@@ -79,6 +81,9 @@
 	.Science {
 		@extend .departmentbase;
 		background-color: #c973c9;
+		border-radius: 4px;
+		border: 5px solid #995699;
+		box-shadow: 0.5rem 0.5rem 0 #6e3f6e;
 		.jobdetail {
 			background-color: #b467b4;
 			border-color: #b467b4;
@@ -87,6 +92,9 @@
 	.Cargo {
 		@extend .departmentbase;
 		background-color: #cf9c6c;
+		border-radius: 4px;
+		border: 5px solid #99734f;
+		box-shadow: 0.5rem 0.5rem 0 #6e533a;
 		.jobdetail {
 			background-color: #ba8c61;
 			border-color: #ba8c61;
@@ -95,6 +103,9 @@
 	.Service {
 		@extend .departmentbase;
 		background-color: #7cc46a;
+		border-radius: 4px;
+		border: 5px solid #5e9650;
+		box-shadow: 0.5rem 0.5rem 0 #3f6435;
 		.jobdetail {
 			background-color: #6fb05f;
 			border-color: #6fb05f;
@@ -103,6 +114,9 @@
 	.Silicon {
 		@extend .departmentbase;
 		background-color: #5dbda0;
+		border-radius: 4px;
+		border: 5px solid #46917a;
+		box-shadow: 0.5rem 0.5rem 0 #2f6152;
 		.jobdetail {
 			background-color: #53aa90;
 			border-color: #53aa90;
@@ -111,6 +125,9 @@
 	.No-Department {
 		@extend .departmentbase;
 		background-color: #9689db;
+		border-radius: 4px;
+		border: 5px solid #796db1;
+		box-shadow: 0.5rem 0.5rem 0 #5a5181;
 		.jobdetail {
 			background-color: #877bc5;
 			border-color: #877bc5;
@@ -119,6 +136,9 @@
 	.Syndicate {
 		@extend .departmentbase;
 		background-color: #d3434f;
+		border-radius: 4px;
+		border: 5px solid #a5343e;
+		box-shadow: 0.5rem 0.5rem 0 #812930;
 		.jobdetail {
 			background-color: #be3c47;
 			border-color: #be3c47;
@@ -127,6 +147,9 @@
 	.Space-Threat {
 		@extend .departmentbase;
 		background-color: #5e799c;
+		border-radius: 4px;
+		border: 5px solid #394c66;
+		box-shadow: 0.5rem 0.5rem 0 #2b394d;
 		.jobdetail {
 			background-color: #4a6486;
 			border-color: #4a6486;
@@ -135,6 +158,9 @@
 	.Abductors {
 		@extend .departmentbase;
 		background-color: #ff7f90;
+		border-radius: 4px;
+		border: 5px solid #ad5662;
+		box-shadow: 0.5rem 0.5rem 0 #8a454e;
 		.jobdetail {
 			background-color: #cc6573;
 			border-color: #cc6573;
@@ -143,6 +169,9 @@
 	.Biohazard {
 		@extend .departmentbase;
 		background-color: #3caf67;
+		border-radius: 4px;
+		border: 5px solid #2a7e49;
+		box-shadow: 0.5rem 0.5rem 0 #1c5531;
 		.jobdetail {
 			background-color: #349759;
 			border-color: #349759;
@@ -151,6 +180,9 @@
 	.Magic {
 		@extend .departmentbase;
 		background-color: #a090ea;
+		border-radius: 4px;
+		border: 5px solid #7167a5;
+		box-shadow: 0.5rem 0.5rem 0 #5f568a;
 		.jobdetail {
 			background-color: #8679c4;
 			border-color: #8679c4;
@@ -159,6 +191,9 @@
 	.Wizard-Federation {
 		@extend .departmentbase;
 		background-color: #6c629e;
+		border-radius: 4px;
+		border: 5px solid #464069;
+		box-shadow: 0.5rem 0.5rem 0 #34304e;
 		.jobdetail {
 			background-color: #5e558d;
 			border-color: #5e558d;
@@ -167,14 +202,20 @@
 	.Ghost-Role {
 		@extend .departmentbase;
 		background-color: #e4c161;
+		border-radius: 4px;
+		border: 5px solid #b1964b;
+		box-shadow: 0.5rem 0.5rem 0 #917a3d;
 		.jobdetail {
 			background-color: #cfb059;
 			border-color: #cfb059;
 		}
 	}
-	.Conditional {
+	.Event {
 		@extend .departmentbase;
 		background-color: #50aee4;
+		border-radius: 4px;
+		border: 5px solid #3980a8;
+		box-shadow: 0.5rem 0.5rem 0 #2e688a;
 		.jobdetail {
 			background-color: #4798c7;
 			border-color: #4798c7;
@@ -183,6 +224,9 @@
 	.Non-Role {
 		@extend .departmentbase;
 		background-color: #c9d6dd;
+		border-radius: 4px;
+		border: 5px solid #9b9fa1;
+		box-shadow: 0.5rem 0.5rem 0 #6c6f70;
 		.jobdetail {
 			background-color: #bbc0c2;
 			border-color: #bbc0c2;
@@ -191,6 +235,9 @@
 	.Other {
 		@extend .departmentbase;
 		background-color: #a397e9;
+		border-radius: 4px;
+		border: 5px solid #756ea8;
+		box-shadow: 0.5rem 0.5rem 0 #55507a;
 		.jobdetail {
 			background-color: #9187cf;
 			border-color: #9187cf;
@@ -199,6 +246,9 @@
 	.Removed {
 		@extend .departmentbase;
 		background-color: #cc8bc1;
+		border-radius: 4px;
+		border: 5px solid #996190;
+		box-shadow: 0.5rem 0.5rem 0 #704769;
 		.jobdetail {
 			background-color: #b975ae;
 			border-color: #b975ae;
