@@ -40,7 +40,7 @@ export default async function PlayerDetails({
 
 function PlayerNotFound() {
 	return (
-		<div className={styles.playercontainer}>
+		<div className={styles.infocontainer}>
 			<FontAwesomeIcon
 				className={styles.alerticon}
 				icon={"triangle-exclamation"}

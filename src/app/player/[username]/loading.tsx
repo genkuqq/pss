@@ -3,7 +3,7 @@ import styles from "../../../styles/player.module.scss";
 
 export default function Loading() {
 	return (
-		<div className={styles.playercontainer}>
+		<div className={styles.infocontainer}>
 			<FontAwesomeIcon className={styles.spinicon} icon={"spinner"} spin />
 			<p>Oyuncu ile ilgili bilgiler alınıyor...</p>
 		</div>
