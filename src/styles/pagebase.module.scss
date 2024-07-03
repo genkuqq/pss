@@ -64,3 +64,22 @@
 		color: rgba(211, 211, 211, 0.842);
 	}
 }
+
+.notfound {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	padding-top: 20px;
+	border-radius: 15px;
+	border: 5px solid #212121;
+	box-shadow: 0.5rem 0.5rem 0 #212121;
+	border-radius: 4px;
+	background-color: white;
+	justify-content: center;
+	text-align: center;
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+}
