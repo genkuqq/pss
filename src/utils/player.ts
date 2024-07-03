@@ -59,17 +59,16 @@ export async function getPlayerPlaytime(
 }
 
 export function getTimeString(minutes: number) {
-	const hours = Math.floor(minutes / 60);
-	const mins = minutes % 60;
-	return `${hours} Saat ${mins} Dakika`;
+	const hours = Math.floor((minutes / 60) * 10) / 10;
+	return `${hours} saat`;
 }
 
 export function findJobMinutes(jobName: string, data: any) {
 	if (!Array.isArray(data)) {
-		return "0 Saat 0 Dakika";
+		return "henüz oynanılmamış";
 	}
 	const job = data.find((item: any) => item.job === jobName);
-	return job ? getTimeString(job.minutes) : "0 Saat 0 Dakika";
+	return job ? getTimeString(job.minutes) : "henüz oynanılmamış";
 }
 
 export function getTotalPlaytime(timedata: any) {
