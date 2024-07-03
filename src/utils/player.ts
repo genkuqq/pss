@@ -62,7 +62,8 @@ export async function getPlayerPlaytime(
 
 export function getTimeString(minutes: number) {
 	const hours = Math.floor((minutes / 60) * 10) / 10;
-	return `${hours} saat`;
+	const hourscomma = hours.toString().replace(".", ",");
+	return `${hourscomma} saat`;
 }
 
 export function findJobMinutes(jobName: string, data: any) {
