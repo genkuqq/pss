@@ -322,3 +322,9 @@
 		}
 	}
 }
+
+// Loading Component Section
+.loading {
+	@extend .searchbox;
+	width: 50%;
+}
