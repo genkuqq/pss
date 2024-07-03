@@ -40,7 +40,7 @@ export default async function PlayerDetails({
 
 function PlayerNotFound() {
 	return (
-		<div className={styles.playernotfound}>
+		<div className={styles.playercontainer}>
 			<FontAwesomeIcon className={styles.icon} icon={"triangle-exclamation"} />
 			<p>Böyle bir oyuncu bulunamadı.</p>
 		</div>
