@@ -4,7 +4,7 @@ import styles from "../../../styles/player.module.scss";
 export default function Loading() {
 	return (
 		<div className={styles.playercontainer}>
-			<FontAwesomeIcon className={styles.icon} icon={"spinner"} spin />
+			<FontAwesomeIcon className={styles.spinicon} icon={"spinner"} spin />
 			<p>Oyuncu ile ilgili bilgiler alınıyor...</p>
 		</div>
 	);

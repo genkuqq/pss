@@ -327,4 +327,12 @@
 .playercontainer {
 	@extend .searchbox;
 	width: 50%;
+	.spinicon {
+		width: 24px;
+		height: 24px;
+	}
+	.alerticon {
+		@extend .spinicon;
+		color: #bb2236;
+	}
 }
