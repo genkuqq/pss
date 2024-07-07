@@ -7,7 +7,9 @@ import {
 	getPlayerPlaytime,
 } from "../../../utils/player";
 import PlayerSearch from "../page";
-import PlayerPlaytimeComponent from "../../../components/player";
+import PlayerPlaytimeComponent, {
+	UserDetailComponent,
+} from "../../../components/player";
 
 export default async function PlayerDetails({
 	params,
@@ -33,6 +35,7 @@ export default async function PlayerDetails({
 	return (
 		<div>
 			<PlayerSearch />
+			<UserDetailComponent playerdata={playerData} />
 			<PlayerPlaytimeComponent playtimedata={playerPlaytimeData} />
 		</div>
 	);

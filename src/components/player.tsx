@@ -4,6 +4,8 @@ import {
 	findJobMinutes,
 	PlayerPlaytimeDataProps,
 	JobProps,
+	PlayerDataProps,
+	getDetailedDate,
 } from "../utils/player";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -44,12 +46,29 @@ export default function PlayerPlaytimeComponent({
 	);
 }
 
-export function JobComponent(params: JobProps) {
+function JobComponent(params: JobProps) {
 	return (
 		<div className={styles.jobdetail}>
 			<FontAwesomeIcon className={styles.icon} icon={Icons[params.icon]} />
 			<span>{params.name}</span>
 			<p className={styles.time}>{findJobMinutes(params.name, params.data)}</p>
+		</div>
+	);
+}
+
+export function UserDetailComponent({
+	playerdata,
+}: {
+	playerdata: PlayerDataProps;
+}) {
+	return (
+		<div className={styles.userdetail}>
+			<h1>{playerdata.byond_key}</h1>
+			<p>Sunucuya katıldığı tarih: {playerdata.first_seen.toString()}</p>
+			<p>
+				Son görüldüğü tarih: {getDetailedDate(new Date(playerdata.last_seen))}
+			</p>
+			<p>Son görüldüğü round: {playerdata.last_seen_round}</p>
 		</div>
 	);
 }

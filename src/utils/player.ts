@@ -62,8 +62,8 @@ export async function getPlayerPlaytime(
 
 export function getTimeString(minutes: number) {
 	const hours = Math.floor((minutes / 60) * 10) / 10;
-	const hourscomma = hours.toString().replace(".", ",");
-	return `${hourscomma} saat`;
+	const hourswcomma = hours.toString().replace(".", ",");
+	return `${hourswcomma} saat`;
 }
 
 export function findJobMinutes(jobName: string, data: any) {
@@ -80,4 +80,18 @@ export function getTotalPlaytime(timedata: any) {
 	const livingMinutes = living ? living.minutes : 0;
 	const ghostMinutes = ghost ? ghost.minutes : 0;
 	return getTimeString(livingMinutes + ghostMinutes);
+}
+
+export function getDetailedDate(lastSeenDate: Date) {
+	const now = new Date();
+	const difference = now.getTime() - lastSeenDate.getTime();
+	if (difference <= 0) {
+		return "Şimdi";
+	}
+	const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+	const hours = Math.floor(
+		(difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+	);
+	const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+	return `${days} gün, ${hours} saat, ${minutes} dakika önce`;
 }
