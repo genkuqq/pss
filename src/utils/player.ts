@@ -24,7 +24,6 @@ export async function getPlayerData(
 	ckey: string
 ): Promise<PlayerDataProps | null> {
 	// note: Testing loading await new Promise((resolve) => setTimeout(resolve, 14000));
-	await new Promise((resolve) => setTimeout(resolve, 1400));
 	const response = await fetch(`https://api.turkb.us/v2/player/?ckey=${ckey}`, {
 		cache: "no-cache",
 		headers: {
@@ -42,7 +41,6 @@ export async function getPlayerPlaytime(
 	ckey: string
 ): Promise<PlayerPlaytimeDataProps | null> {
 	// note: Testing loading await new Promise((resolve) => setTimeout(resolve, 14000));
-	await new Promise((resolve) => setTimeout(resolve, 1400));
 	const response = await fetch(
 		`https://api.turkb.us/v2/player/roletime?ckey=${ckey}`,
 		{
