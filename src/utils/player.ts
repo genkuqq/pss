@@ -68,10 +68,10 @@ export function getTimeString(minutes: number) {
 
 export function findJobMinutes(jobName: string, data: any) {
 	if (!Array.isArray(data)) {
-		return "henüz oynanılmamış";
+		return "—";
 	}
 	const job = data.find((item: any) => item.job === jobName);
-	return job ? getTimeString(job.minutes) : "henüz oynanılmamış";
+	return job ? getTimeString(job.minutes) : "—";
 }
 
 export function getTotalPlaytime(timedata: any) {
