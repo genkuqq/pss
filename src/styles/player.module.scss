@@ -34,7 +34,7 @@
 			max-height: 130vh;
 		}
 	}
-	.Command {
+	.Komuta {
 		@extend .departmentbase;
 		background-color: #6681a5;
 		border-radius: 4px;
@@ -45,7 +45,7 @@
 			border-color: #5b7494;
 		}
 	}
-	.Security {
+	.Güvenlik {
 		@extend .departmentbase;
 		background-color: #d46a78;
 		border-radius: 4px;
@@ -56,7 +56,7 @@
 			border-color: #be5f6c;
 		}
 	}
-	.Engineering {
+	.Mühendislik {
 		@extend .departmentbase;
 		background-color: #dfb567;
 		border-radius: 4px;
@@ -67,7 +67,7 @@
 			border-color: #c8a25c;
 		}
 	}
-	.Medical {
+	.Medikal {
 		@extend .departmentbase;
 		background-color: #65b2bd;
 		border-radius: 4px;
@@ -78,7 +78,7 @@
 			border-color: #5aa0aa;
 		}
 	}
-	.Science {
+	.Bilim {
 		@extend .departmentbase;
 		background-color: #c973c9;
 		border-radius: 4px;
@@ -89,7 +89,7 @@
 			border-color: #b467b4;
 		}
 	}
-	.Cargo {
+	.Kargo {
 		@extend .departmentbase;
 		background-color: #cf9c6c;
 		border-radius: 4px;
@@ -100,7 +100,7 @@
 			border-color: #ba8c61;
 		}
 	}
-	.Service {
+	.Servis {
 		@extend .departmentbase;
 		background-color: #7cc46a;
 		border-radius: 4px;
@@ -111,7 +111,7 @@
 			border-color: #6fb05f;
 		}
 	}
-	.Silicon {
+	.Silikon {
 		@extend .departmentbase;
 		background-color: #5dbda0;
 		border-radius: 4px;
@@ -122,7 +122,7 @@
 			border-color: #53aa90;
 		}
 	}
-	.No-Department {
+	.Bağımsız {
 		@extend .departmentbase;
 		background-color: #9689db;
 		border-radius: 4px;
@@ -133,7 +133,7 @@
 			border-color: #877bc5;
 		}
 	}
-	.Syndicate {
+	.Sendika {
 		@extend .departmentbase;
 		background-color: #d3434f;
 		border-radius: 4px;
@@ -144,7 +144,7 @@
 			border-color: #be3c47;
 		}
 	}
-	.Space-Threat {
+	.Uzaysal-Tehdi̇tler {
 		@extend .departmentbase;
 		background-color: #5e799c;
 		border-radius: 4px;
@@ -155,7 +155,7 @@
 			border-color: #4a6486;
 		}
 	}
-	.Abductors {
+	.Kaçıranlar {
 		@extend .departmentbase;
 		background-color: #ff7f90;
 		border-radius: 4px;
@@ -166,7 +166,7 @@
 			border-color: #cc6573;
 		}
 	}
-	.Biohazard {
+	.Biyolojik-Tehlikeler {
 		@extend .departmentbase;
 		background-color: #3caf67;
 		border-radius: 4px;
@@ -177,7 +177,7 @@
 			border-color: #349759;
 		}
 	}
-	.Magic {
+	.Sihir {
 		@extend .departmentbase;
 		background-color: #a090ea;
 		border-radius: 4px;
@@ -188,7 +188,7 @@
 			border-color: #8679c4;
 		}
 	}
-	.Wizard-Federation {
+	.Büyücü-Federasyonu {
 		@extend .departmentbase;
 		background-color: #6c629e;
 		border-radius: 4px;
@@ -199,7 +199,7 @@
 			border-color: #5e558d;
 		}
 	}
-	.Ghost-Role {
+	.Hayalet-Rolleri {
 		@extend .departmentbase;
 		background-color: #e4c161;
 		border-radius: 4px;
@@ -221,7 +221,7 @@
 			border-color: #4798c7;
 		}
 	}
-	.Non-Role {
+	.Rol-Dışı {
 		@extend .departmentbase;
 		background-color: #c9d6dd;
 		border-radius: 4px;
@@ -232,7 +232,7 @@
 			border-color: #bbc0c2;
 		}
 	}
-	.Other {
+	.Diğer {
 		@extend .departmentbase;
 		background-color: #a397e9;
 		border-radius: 4px;
@@ -243,7 +243,7 @@
 			border-color: #9187cf;
 		}
 	}
-	.Removed {
+	.Kaldırılmış {
 		@extend .departmentbase;
 		background-color: #cc8bc1;
 		border-radius: 4px;

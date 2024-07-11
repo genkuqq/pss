@@ -144,7 +144,7 @@ export const Icons: IconProps = {
 
 export const Joblist = {
 	Station: {
-		Command: [
+		Komuta: [
 			"Captain",
 			"Head of Personnel",
 			"Chief Engineer",
@@ -153,29 +153,29 @@ export const Joblist = {
 			"Research Director",
 			"Head of Security",
 		],
-		Security: [
+		Güvenlik: [
 			"Head of Security",
 			"Warden",
 			"Detective",
 			"Brig Physician",
 			"Security Officer",
 		],
-		Engineering: [
+		Mühendislik: [
 			"Chief Engineer",
 			"Station Engineer",
 			"Worker",
 			"Atmospheric Technician",
 		],
-		Medical: [
+		Medikal: [
 			"Chief Medical Officer",
 			"Medical Doctor",
 			"Paramedic",
 			"Chemist",
 			"Coroner",
 		],
-		Science: ["Research Director", "Scientist", "Roboticist", "Geneticist"],
-		Cargo: ["Quartermaster", "Cargo Technician", "Shaft Miner", "Bitrunner"],
-		Service: [
+		Bilim: ["Research Director", "Scientist", "Roboticist", "Geneticist"],
+		Kargo: ["Quartermaster", "Cargo Technician", "Shaft Miner", "Bitrunner"],
+		Servis: [
 			"Head of Personnel",
 			"Nt Secretary",
 			"Bartender",
@@ -189,11 +189,11 @@ export const Joblist = {
 			"Chaplain",
 			"Psychologist",
 		],
-		Silicon: ["AI", "Cyborg"],
-		"No Department": ["Assistant", "Animal", "Prisoner"],
+		Silikon: ["AI", "Cyborg"],
+		Bağımsız: ["Assistant", "Animal", "Prisoner"],
 	},
 	Antag: {
-		Syndicate: [
+		Sendika: [
 			"Traitor",
 			"Blood Brother",
 			"Spy",
@@ -216,7 +216,7 @@ export const Joblist = {
 			"Battlecruiser Captain",
 			"Battlecruiser Crew",
 		],
-		"Space Threat": [
+		"Uzaysal Tehdi̇tler": [
 			"Nightmare",
 			"Space Dragon",
 			"Space Ninja",
@@ -229,14 +229,14 @@ export const Joblist = {
 			"Fugitive Hunter",
 			"Pyroclastic Anomaly Slime",
 		],
-		Abductors: [
+		Kaçıranlar: [
 			"Abductor",
 			"Abductor Agent",
 			"Abductor Scientist",
 			"Abductor Solo",
 		],
-		Biohazard: ["Blob Infection", "Morph"],
-		Magic: [
+		"Biyolojik Tehlikeler": ["Blob Infection", "Morph"],
+		Sihir: [
 			"Heretic",
 			"Heretic Smuggler",
 			"Changeling",
@@ -244,7 +244,7 @@ export const Joblist = {
 			"Stowaway Changeling",
 			"Cultist",
 		],
-		"Wizard Federation": [
+		"Büyücü Federasyonu": [
 			"Wizard",
 			"Wizard (Midround)",
 			"Apprentice",
@@ -252,7 +252,7 @@ export const Joblist = {
 		],
 	},
 	Other: {
-		"Ghost Role": [
+		"Hayalet Rolleri": [
 			"Ancient Crew",
 			"Ash Walker",
 			"Hermit",
@@ -286,8 +286,8 @@ export const Joblist = {
 			"Survivalist",
 			"Highlander",
 		],
-		"Non-Role": ["Admin", "Ghost", "Living", "Unknown"],
-		Other: ["ERT Generic", "Skeleton", "Unassigned Crewmember"],
-		Removed: ["Blueshield", "Synthetic", "Virologist"],
+		"Rol Dışı": ["Admin", "Ghost", "Living", "Unknown"],
+		Diğer: ["ERT Generic", "Skeleton", "Unassigned Crewmember"],
+		Kaldırılmış: ["Blueshield", "Synthetic", "Virologist"],
 	},
 };
