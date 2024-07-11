@@ -74,6 +74,7 @@ export const Icons: IconProps = {
 	"Abductor Agent": "shuttle-space",
 	"Abductor Scientist": "shuttle-space",
 	"Abductor Solo": "shuttle-space",
+	Blob: "virus-covid",
 	"Blob Infection": "virus-covid",
 	Morph: "certificate",
 	Heretic: "hamsa",
@@ -235,7 +236,7 @@ export const Joblist = {
 			"Abductor Scientist",
 			"Abductor Solo",
 		],
-		"Biyolojik Tehlikeler": ["Blob Infection", "Morph"],
+		"Biyolojik Tehlikeler": ["Blob", "Blob Infection", "Morph"],
 		Sihir: [
 			"Heretic",
 			"Heretic Smuggler",
