@@ -91,5 +91,12 @@ export function getDetailedDate(lastSeenDate: Date) {
 		(difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 	);
 	const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-	return `${days} gün, ${hours} saat, ${minutes} dakika önce`;
+
+	if (days > 0) {
+		return `${days} gün, ${hours} saat, ${minutes} dakika önce`;
+	} else if (hours > 0) {
+		return `${hours} saat, ${minutes} dakika önce`;
+	} else {
+		return `${minutes} dakika önce`;
+	}
 }
